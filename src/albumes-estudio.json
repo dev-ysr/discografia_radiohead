@@ -1,0 +1,65 @@
+[
+    {
+        "album": "Pablo Honey",
+        "anio": "1993",
+        "formato": "CD, CS, LP",
+        "img": "assets/img/pablo-honey.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/Pablo_Honey"
+    },
+    {
+        "album": "The Bends",
+        "anio": "1995",
+        "formato": "CD, CS, LP, MD",
+        "img": "assets/img/the-bends.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/The_Bends"
+    },
+    {
+        "album": "OK Computer",
+        "anio": "1997",
+        "formato": "CD, CS, LP, MD",
+        "img": "assets/img/ok-computer.png",
+        "link-wiki": "https://es.wikipedia.org/wiki/OK_Computer"
+    },
+    {
+        "album": "Kid A",
+        "anio": "2000",
+        "formato": "CD, CS, LP",
+        "img": "assets/img/kid-a.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/Kid_A"
+    },
+    {
+        "album": "Amnesiac",
+        "anio": "2001",
+        "formato": "CD, CS, LP",
+        "img": "assets/img/amnesiac.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/Amnesiac"
+    },
+    {
+        "album": "Hail to the Thief",
+        "anio": "2003",
+        "formato": "CD, CS, LP",
+        "img": "assets/img/hail-to-the-thief.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/Hail_to_the_Thief"
+    },
+    {
+        "album": "In rainbows",
+        "anio": "2007",
+        "formato": "CD, LP, descarga digital",
+        "img": "assets/img/in-rainbows.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/In_Rainbows"
+    },
+    {
+        "album": "The King of Limbs",
+        "anio": "2011",
+        "formato": "CD, LP, descarga digital",
+        "img": "assets/img/the-king-of-limbs.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/The_King_of_Limbs"
+    },
+    {
+        "album": "A Moon Shaped Pool",
+        "anio": "2016",
+        "formato": "CD, LP, descarga digital",
+        "img": "assets/img/a-moon-shaped-pool.jpg",
+        "link-wiki": "https://es.wikipedia.org/wiki/A_Moon_Shaped_Pool"
+    }
+]
