@@ -1,0 +1,13 @@
+<div class="container mt-3">
+
+    <div class="row animated fadeIn fast" *ngIf="discos.length == 0">
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+                No existen resultados con el término: {{ termino }}
+            </div>
+        </div>
+    </div>
+    <div class="card-columns">
+        <app-card-disco *ngFor="let disco of discos;" [disco]="disco"></app-card-disco>
+    </div>
+</div>

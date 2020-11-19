@@ -94,6 +94,27 @@ export class DiscosService {
   getDisco(id:number):Disco{
     return this.discos[id];
   }
+
+  buscarAlbum( termino:string ):Disco[]{
+
+    let discosArr:Disco[] = [];
+    termino = termino.toLowerCase();
+
+    for( let i = 0; i < this.discos.length; i ++ ){
+
+      let disco = this.discos[i];
+
+      let nombre = disco.album.toLowerCase();
+
+      if( nombre.indexOf( termino ) >= 0  ){
+        discosArr.push( disco )
+      }
+
+    }
+
+    return discosArr;
+
+  }
 }
 
 export interface Disco {

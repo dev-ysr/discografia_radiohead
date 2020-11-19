@@ -1,4 +1,12 @@
-<div class="container-fluid">
+<div class="row animated fadeIn fast mt-3" *ngIf="!existeDisco">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existe el disco
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="existeDisco">
     <h1 class="text-center mt-3">{{ disco.album }}</h1>
     <hr>
     <div class="row flex-md-column mt-3">
@@ -17,7 +25,7 @@
     </div>
 
     <div class="row flex-column align-items-end mb-5">
-        <a [href]="disco.linkWiki" class="mb-2">Más información</a>
+        <a [href]="disco.linkWiki" target="_blank" class="mb-2">Más información</a>
         <button class="btn btn-outline-danger col-12 col-md-4 col-lg-2" [routerLink]="['/discos']">Regresar</button>
     </div>
 

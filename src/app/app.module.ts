@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { DiscosService } from './services/discos.service';
 
@@ -15,6 +17,8 @@ import { HomeComponent } from './components/home/home.component';
 import { DiscosComponent } from './components/discos/discos.component';
 import { CardDiscoComponent } from './components/shared/card-disco/card-disco.component';
 import { DiscoComponent } from './components/disco/disco.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
+
 
 
 
@@ -27,9 +31,13 @@ import { DiscoComponent } from './components/disco/disco.component';
     HomeComponent,
     DiscosComponent,
     CardDiscoComponent,
-    DiscoComponent
+    DiscoComponent,
+    BusquedaComponent
   ],
   imports: [
+    HttpClientModule,
+    BrowserModule,
+    FormsModule,
     BrowserModule,
     APP_ROUTING
   ],

@@ -1,4 +1,10 @@
 <div class="container mt-3">
+
+    <form class="form-inline w-100 justify-content-center my-3 my-lg-5">
+        <input class="form-control mr-sm-2 col-12 col-md-8" type="text" placeholder="Search" aria-label="Search" (keyup.enter)="buscarAlbum(buscarTexto.value)" #buscarTexto>
+        <button class="btn btn-outline-primary  col-12 col-md-3" type="button" (click)="buscarAlbum(buscarTexto.value)">Search</button>
+    </form>
+
     <div class="card-columns">
         <app-card-disco *ngFor="let disco of discos;" [disco]="disco"></app-card-disco>
     </div>

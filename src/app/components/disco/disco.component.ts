@@ -10,11 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 export class DiscoComponent implements OnInit {
 
   disco:Disco;
+  existeDisco:boolean;
 
   constructor( private activatedRoute:ActivatedRoute, private discosService:DiscosService) { 
 
     this.activatedRoute.params.subscribe( params=> {
-      this.disco = this.discosService.getDisco(params['id']);
+
+      if (this.discosService.getDisco(params['id'])) {
+        this.disco = this.discosService.getDisco(params['id']);
+        this.existeDisco = true;
+      } else{
+        this.existeDisco = false;
+      }
+      
     })
 
   }

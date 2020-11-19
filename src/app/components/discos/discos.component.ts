@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DiscosService, Disco } from "./../../services/discos.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-discos',
@@ -9,13 +11,15 @@ export class DiscosComponent implements OnInit {
 
   discos:Disco[];
 
-  constructor(private discosService:DiscosService) { 
+  constructor(private discosService:DiscosService, private router:Router) { 
     this.discos = this.discosService.getDiscos();
-    this.discos.sort(( a, b ) => parseInt(a.id)  - parseInt(b.id));
-    console.log(this.discos);
   }
 
   ngOnInit(): void {
+  }
+
+  buscarAlbum(termino:string){
+    this.router.navigate(['busqueda', termino]);
   }
 
 }
