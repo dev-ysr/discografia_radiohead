@@ -1,20 +1,25 @@
-<h1>{{ disco.album }}</h1>
-<hr>
+<div class="container-fluid">
+    <h1 class="text-center mt-3">{{ disco.album }}</h1>
+    <hr>
+    <div class="row flex-md-column mt-3">
+        <div class="col-12">
+            <div class="row flex-column align-content-center text-center">
+                <img [src]="disco.img" alt="" class="img-fluid mb-3 col-12 col-md-4 col-lg-3">
+                <p><span class="font-weight-bold">Año:</span> {{disco.anio}}</p>
+                <p><span class="font-weight-bold">Formato:</span> {{disco.formato}}</p>
+            </div>
+            <hr class="d-none d-md-block">
+        </div>
+        <div class="col-12">
+            <p class="text-justify">{{disco.descripcion}}</p>
+        </div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas magni voluptatum non beatae facere animi corporis, suscipit, nisi dolor eos culpa a ut fugit consequuntur. Necessitatibus officia, provident deserunt aspernatur sunt animi iusto doloremque
-    explicabo totam doloribus! Omnis sapiente officiis id odit itaque! Repudiandae tempore corporis, ullam quas soluta praesentium nam inventore quibusdam, voluptas consequuntur perferendis quam illo, quod excepturi expedita? Inventore eos enim cum exercitationem
-    qui eaque quas fuga ducimus, nihil similique ipsa magni sunt voluptate tempora at ut dolores laudantium. Fugiat aperiam optio nobis nihil! Aliquam, accusantium impedit? Minus a quia quae iure impedit? Distinctio repellat sint, reprehenderit, eveniet
-    quisquam neque adipisci commodi ratione doloribus aspernatur amet blanditiis quos odio. Eum, similique eaque consectetur fuga perspiciatis tempore laboriosam quod voluptates inventore iste vero id est labore quae facilis saepe fugit earum amet modi
-    voluptatibus numquam sit, hic corporis excepturi. Obcaecati necessitatibus quis doloremque ullam veniam porro error eum, vitae reprehenderit a iste eos nisi natus deleniti sint id possimus modi temporibus placeat alias. Vitae corrupti sapiente illo
-    delectus fugiat, deserunt quod laudantium voluptatum aliquid quia deleniti porro nam minus? Neque natus deleniti, repellendus enim voluptate modi. Dignissimos, soluta odit aliquam necessitatibus ipsa obcaecati maxime optio velit, accusantium facere,
-    esse dolorum consequatur voluptatem excepturi. Laboriosam in alias error exercitationem at inventore culpa eaque sequi temporibus saepe fugiat, dignissimos, maxime dolores quaerat ipsum vero id adipisci? Eos, perferendis repellat. Cum, consequatur
-    sed minus, ipsa optio officia adipisci magni aut id pariatur doloribus, quia enim possimus fugiat debitis sint odit dolore ex illo fugit repellat? Mollitia amet inventore rem aperiam esse ullam exercitationem! Autem totam ex nostrum voluptatibus voluptates
-    eos id officia vitae quod tenetur facere, veritatis adipisci alias rem ipsum qui? Nostrum natus itaque aperiam consequatur optio maiores, vitae velit facere assumenda et aspernatur. Rerum deleniti distinctio possimus voluptatibus voluptatem aperiam
-    similique, est magni laboriosam perferendis, numquam maxime! Maiores hic modi sint soluta, atque natus! Alias, eaque. Labore quos aliquam corrupti ipsum molestiae temporibus soluta ratione esse, tempore sed nam dolorum officia repudiandae sapiente
-    eaque rem ipsa asperiores sint sunt optio blanditiis? Delectus veritatis aliquam dignissimos non sunt ratione aperiam accusantium rerum, corporis dicta, possimus tempore, incidunt neque! Autem minima vitae culpa dolorem est, non debitis, possimus
-    modi nulla accusamus sunt optio ab nobis eveniet sint error officia asperiores natus aut porro molestiae consequatur vel. Voluptates, nobis odio laboriosam perferendis sequi a consequuntur voluptatum perspiciatis quod ullam. Aperiam cum est iure blanditiis
-    placeat facere eveniet iste explicabo, molestiae cupiditate atque fugiat sit reiciendis voluptas facilis quod dolor quam rerum magnam quidem expedita nihil culpa illo? Qui fugiat quasi autem eum, alias labore nisi a error sit quas? Sed autem architecto,
-    molestiae nemo quisquam porro sunt sint natus placeat fuga quam omnis inventore adipisci magnam voluptatem corporis ullam eos, voluptate quaerat? Ratione nostrum reprehenderit molestias iste corporis. Qui sapiente facilis enim illum eum impedit temporibus
-    possimus cupiditate magnam optio corrupti maxime id perspiciatis assumenda eos natus, quasi vitae exercitationem voluptas porro quaerat eligendi debitis necessitatibus recusandae? Corrupti, impedit minus. Excepturi!</p>
+    </div>
 
-<button class="btn btn-outline-danger" [routerLink]="['/discos']">Regresar</button>
+    <div class="row flex-column align-items-end mb-5">
+        <a [href]="disco.linkWiki" class="mb-2">Más información</a>
+        <button class="btn btn-outline-danger col-12 col-md-4 col-lg-2" [routerLink]="['/discos']">Regresar</button>
+    </div>
+
+
+</div>
