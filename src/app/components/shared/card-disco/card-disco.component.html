@@ -1,0 +1,20 @@
+<div class="card animated fadeIn fast">
+    <img [src]="disco.img" [alt]="disco.album" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{ disco.album }}</h5>
+        <p class="card-text desc">{{ disco.descripcion | slice:0:150}}...</p>
+        <p class="card-text"><small class="text-muted">{{ disco.anio }}</small></p>
+
+        <button (click)="verDisco()" type="button" class="btn btn-outline-primary btn-block">
+      Ver más...
+    </button>
+    </div>
+</div>
+
+<style>
+    /* p.desc {
+        white-space: nowrap;
+
+        text-overflow: ellipsis;
+    } */
+</style>

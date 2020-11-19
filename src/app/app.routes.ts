@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 // components
 import { HomeComponent } from './components/home/home.component';
 import { DiscosComponent } from './components/discos/discos.component';
-
+import { DiscoComponent } from './components/disco/disco.component';
 
 
 const ROUTES: Routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'discos', component: DiscosComponent },
+    { path: 'disco/:id', component: DiscoComponent },
     // { path: '**', component: HomeComponent },
 ];
 
