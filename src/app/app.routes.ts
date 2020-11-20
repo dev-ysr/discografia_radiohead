@@ -8,7 +8,8 @@ import { DiscoComponent } from './components/disco/disco.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
 const ROUTES: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    // { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'discos', component: DiscosComponent },
     { path: 'disco/:id', component: DiscoComponent },
